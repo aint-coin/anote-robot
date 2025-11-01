@@ -267,7 +267,7 @@ func initMonitor() *Monitor {
 	go m.monitorAintBuys()
 	go m.monitorNodeMints()
 	go m.monitorDiskSpace()
-	go m.forwardCompetition()
+	// go m.forwardCompetition()
 	go m.monitorNodes()
 	return m
 }
