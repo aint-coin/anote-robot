@@ -213,7 +213,7 @@ func (m *Monitor) forwardCompetition() {
 
 		msg := &telebot.Message{}
 		// msg.ID = 18
-		msg.ID = 27
+		msg.ID = 31
 		msg.Chat = ch
 
 		if m1 != nil &&
@@ -267,7 +267,7 @@ func initMonitor() *Monitor {
 	go m.monitorAintBuys()
 	go m.monitorNodeMints()
 	go m.monitorDiskSpace()
-	// go m.forwardCompetition()
+	go m.forwardCompetition()
 	go m.monitorNodes()
 	return m
 }
